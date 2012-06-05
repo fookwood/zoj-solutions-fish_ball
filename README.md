@@ -6,12 +6,12 @@
 
 OJ在提交运行时定义了宏：
 
-`#`define ONLINE_JUDGE
+`#define ONLINE_JUDGE`
 
 因此，可以用
 
-`#`ifndef ONLINE_JUDGE
+`#ifndef ONLINE_JUDGE`
 
-`#`endif
+`#endif`
 
 来加入调试信息
