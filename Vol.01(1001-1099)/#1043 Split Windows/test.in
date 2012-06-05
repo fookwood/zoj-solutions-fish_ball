@@ -1,0 +1,9 @@
+10
+|-MCR
+-|-|ABC|D-E|FG|P|-Q-RST 
+|-|-ABC-D|E-FG-P-|Q|RST
+-----HIJKLM
+|------HIJKLMN|-|-ABC-D|E-FG-P-|Q|RST
+|----------HIJKLMNOUVW|-|-ABC-D|E-FG-P-|Q|RST
+-||||||||||HIJKLMNOUVW-|-|ABC-D-E|FG|P|-Q-RST
+|-----ABCDEF------GHIJKLM

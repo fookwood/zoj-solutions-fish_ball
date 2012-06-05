@@ -1,0 +1,28 @@
+3 3
+abc
+efg
+cdef
+aabcdef
+abcdefg
+abccdefefg
+
+5 1
+abc
+bcd
+cde
+cdef
+def
+abcdef
+
+1 1
+cdef
+abcdefg
+
+0 1
+abcdefg
+
+2 2
+a
+f
+abcdefg
+bcafdeg

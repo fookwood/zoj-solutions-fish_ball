@@ -1,0 +1,615 @@
+7
+5
+hell 3
+hello 4
+idea 5
+next 8
+super 3
+2
+787371
+43321
+7
+another 5
+contest 6
+follow 3
+give 13
+integer 6
+new 14
+program 4
+5
+77647261
+6391
+4681
+26684371
+77771
+7
+gewel 5
+hello 3
+hell 2
+rubmarine 4
+ruper 4
+suring 3
+suesday 5
+6
+439351
+435561
+7826274631
+787371
+7874641
+78373291
+107
+ab 2
+aller 2
+als 10
+am 2
+an 3
+angerechnet 5
+aus 2
+begruessung 6
+berichterstattung 13
+bestehenden 13
+bis 13
+bislang 14
+bitten 2
+computing 2
+dabei 10
+darmstaedter 15
+das 15
+dass 8
+dem 9
+der 6
+des 1
+deutschland 9
+diesem 6
+eines 13
+einzigen 12
+entscheidet 2
+erfolg 14
+etwa 13
+fachbereich 1
+felix 15
+findet 6
+firma 8
+fraikin 7
+frankfurter 9
+freuen 9
+fuenf 10
+fuer 4
+gegeneinander 15
+gelaende 5
+gewinnen 1
+gewinnt 12
+gilt 5
+hawaii 11
+hinweis 14
+informatikervereinigung 8
+informatikwissen 12
+innerhalb 6
+jahr 15
+koennen 7
+konnte 8
+kontakt 13
+kryptographie 6
+loesen 13
+loest 2
+loesung 3
+machinery 6
+merck 15
+moechten 14
+moeglich 7
+moeglichst 3
+muessen 15
+nachmittags 15
+nicht 1
+november 6
+prestigetraechtigen 11
+programmiermeisterschaften 6
+reicht 14
+reines 15
+reisen 5
+rolle 10
+seit 4
+skandinavien 11
+spielen 12
+sporthalle 3
+startschuss 6
+statt 3
+stattfindet 10
+strafminuten 2
+strasse 9
+studierenden 8
+teamfaehigkeit 9
+teil 4
+teilen 7
+testierungssystem 5
+ueber 9
+veranstalter 4
+veranstaltung 10
+verbuchen 13
+versuch 3
+von 4
+weltmeisterschaft 9
+welttitelkaempfen 6
+wer 8
+werden 6
+wettbewerb 5
+wettkampf 6
+wichtige 15
+wie 2
+wir 3
+wird 13
+wurde 8
+zb 13
+zeit 1
+zeitmanagement 5
+zu 9
+zurueckgewiesene 4
+zwar 15
+10
+721
+5678381
+57978647271
+3224231
+631
+237834363361
+3371
+1
+7877363278471
+2378361
+129
+acm 9
+alljaehrlich 13
+am 2
+anderem 8
+anerkannt 6
+angerechnet 5
+antreten 9
+aufgaben 8
+ausschlag 13
+beginnt 3
+begruessung 6
+beiden 14
+beneluxstaaten 8
+bereichen 15
+berichterstattung 13
+computing 2
+darauf 4
+darmstadt 7
+darmstaedter 15
+das 15
+dass 8
+den 15
+der 6
+des 1
+die 2
+diese 2
+diesem 6
+drei 12
+dreierteams 4
+eigentlichen 6
+eine 2
+einem 1
+einer 15
+email 6
+erfolg 14
+erreichen 3
+erste 10
+es 1
+faellt 15
+falk 13
+fax 15
+felix 15
+finale 4
+for 4
+fraikin 7
+frankfurter 9
+gegeneinander 15
+gelaende 5
+gestellten 13
+gewinnen 1
+gewinnt 12
+gilt 5
+gleichstand 8
+graphenalgorithmen 2
+groessten 7
+grossbritannien 10
+gute 15
+hinzuweisen 3
+hoffen 7
+informatik 13
+informatikervereinigung 8
+ist 1
+kleinen 11
+kniffliger 10
+koennen 7
+kostet 7
+kryptographie 6
+kurzer 10
+leonhardt 8
+loest 2
+loesung 3
+lokaler 4
+merck 15
+mit 15
+moechten 14
+moeglichst 3
+muessen 15
+nachmittags 15
+nicht 1
+nimmt 4
+november 6
+oder 10
+philipp 9
+programmieraufgaben 7
+programmiermeisterschaften 6
+rechnen 15
+rechners 2
+redaktionen 6
+reines 15
+reisen 5
+rolle 10
+samstag 3
+seit 4
+so 10
+spannenden 8
+spielen 12
+sporthalle 3
+stammen 14
+startschuss 6
+statt 3
+strafminuten 2
+strasse 9
+studierenden 8
+team 14
+teamfaehigkeit 9
+teilnehmer 10
+tel 12
+testierungssystem 5
+testwettbewerb 14
+thomas 14
+tu 9
+uhr 12
+um 11
+unter 4
+veranstalter 4
+verbuchen 13
+versuch 3
+viele 7
+von 4
+weltmeisterschaft 9
+welttitelkaempfen 6
+wer 8
+werden 6
+wettkampf 6
+wie 2
+wuerden 15
+wurde 8
+zu 9
+zurueckgewiesene 4
+29
+35374353881
+1
+23431
+8228431
+67855776425731
+672833842621
+5666831
+6381
+662645436652731
+26677841
+1
+438261
+353648888621
+621
+77647261
+61
+5637361
+8565444666831
+338872452631
+21
+1
+41
+346371
+36741
+723448851
+642481
+4341
+77435361
+322234742673871
+127
+ab 2
+aber 13
+acht 11
+acm 9
+allen 11
+als 10
+am 2
+an 3
+antreten 9
+auch 1
+ausschlag 13
+beginnt 3
+begruessung 6
+beneluxstaaten 8
+bereichen 15
+berichterstattung 13
+bestehenden 13
+bevorstehende 15
+bislang 14
+bitten 2
+da 8
+darauf 4
+darmstadt 7
+darmstaedter 15
+das 15
+dem 9
+des 1
+dreierteams 4
+durfte 3
+ein 2
+eine 2
+einen 1
+einzigen 12
+email 6
+entspricht 10
+erfolg 14
+erreichen 3
+es 1
+fachbereich 1
+fax 15
+findet 6
+firma 8
+for 4
+fraikin 7
+frankfurter 9
+freuen 9
+fuenf 10
+gestellten 13
+gewinnt 12
+graphenalgorithmen 2
+groessten 7
+grossbritannien 10
+hawaii 11
+im 3
+informatik 13
+innerhalb 6
+internationalen 12
+internet 2
+ist 1
+jeder 5
+jeweils 15
+kniffliger 10
+koennen 7
+konnte 8
+kontakt 13
+kostet 7
+kurzer 10
+leonhardt 8
+loesen 13
+loest 2
+lokaler 4
+lokales 7
+machinery 6
+maerz 2
+moechten 14
+moeglich 7
+muessen 15
+nachmittags 15
+nimmt 4
+nordwesteuropaeische 14
+november 6
+oder 10
+prestigetraechtigen 11
+programmiermeisterschaften 6
+qualifizieren 15
+raeumen 14
+rechner 9
+redaktionen 6
+reihe 11
+reines 15
+reisen 5
+rolle 10
+schnuppern 12
+seit 4
+sie 3
+skandinavien 11
+spannenden 8
+stammen 14
+stattfindet 10
+stringverarbeitung 11
+studierende 15
+studierenden 8
+team 14
+teamfaehigkeit 9
+teil 4
+teilen 7
+teilnehmenden 4
+testierungssystem 5
+testwettbewerb 14
+uhr 12
+um 11
+uns 14
+veranstalter 4
+veranstaltung 10
+von 4
+weltmeisterschaft 9
+wettbewerb 5
+wettbewerbs 1
+wichtige 15
+wieder 10
+wir 3
+wird 13
+zb 13
+zeitmanagement 5
+zu 9
+zurueckgewiesene 4
+zwar 15
+10
+782883463381
+1
+8671
+6465731
+637877861
+88567857631
+5553682276351
+22431
+78641
+222831
+126
+ab 2
+acm 9
+allen 11
+aller 2
+alljaehrlich 13
+an 3
+anerkannt 6
+angerechnet 5
+antreten 9
+atlanta 2
+aufgaben 8
+ausgerichtet 12
+ausschlag 13
+automatisches 10
+beginnt 3
+begruessung 6
+beiden 14
+besten 4
+bis 13
+bitten 2
+darmstaedter 15
+das 15
+dass 8
+den 15
+des 1
+deutschland 9
+die 2
+diese 2
+dreierteams 4
+durfte 3
+eigentlichen 6
+eine 2
+einem 1
+einen 1
+einer 15
+eines 13
+entscheidet 2
+erfolg 14
+erreichen 3
+es 1
+etwa 13
+fachbereich 1
+firma 8
+for 4
+frankfurter 9
+gaertner 12
+gegeneinander 15
+gestellten 13
+gewinnen 1
+gewinnt 12
+gleichstand 8
+groessten 7
+grossbritannien 10
+hahn 1
+hilfe 15
+hinzuweisen 3
+ihre 3
+im 3
+informatik 13
+internationalen 12
+jahr 15
+kleinen 11
+kniffliger 10
+koennen 7
+konnte 8
+kontakt 13
+korrekt 12
+kurzer 10
+lokaler 4
+machinery 6
+maerz 2
+meisten 9
+muessen 15
+nachmittags 15
+nicht 1
+nimmt 4
+november 6
+ob 11
+oder 10
+programm 12
+programmieraufgaben 7
+qualifizieren 15
+rechner 9
+rechners 2
+redaktionen 6
+reihe 11
+rolle 10
+runde 5
+samstag 3
+schnuppern 12
+sich 7
+skandinavien 11
+spannenden 8
+spielen 12
+sporthalle 3
+stammen 14
+startschuss 6
+stattfindet 10
+strafminuten 2
+strasse 9
+stringverarbeitung 11
+studierende 15
+stunden 1
+teamfaehigkeit 9
+teams 9
+teil 4
+teilen 7
+teilnehmer 10
+tel 12
+testierungssystem 5
+veranstalter 4
+verbuchen 13
+viele 7
+vom 15
+welttitelkaempfen 6
+werden 6
+wettbewerbs 1
+wettkampfatmosphaere 15
+wird 13
+wuerden 15
+zb 13
+zeit 1
+zu 9
+zum 12
+zur 3
+zurueckgewiesene 4
+30
+55871
+1
+27843233576841
+3668877481
+73351
+1
+2363581
+258453233661
+25467248281
+67357453856361
+1
+7383551
+553221
+5421
+325551
+441
+44698934731
+58667874282351
+3431
+31
+432288536844481
+778478561
+4671
+22287641
+84438224826461
+41
+82383471
+221
+864365361
+445328785821

@@ -1,0 +1,42 @@
+3
+a
+b
+asdgasgasgabavweha87sf7
+4
+a - asdgasgasgabavweha87sf7 6:0
+asdgasgasgabavweha87sf7 - b 0:5
+a - b 9:9
+b - a 0:2
+
+10
+Joyce
+Martin
+Nepoleon
+Mike
+Jackson
+Bo
+Mc'Donald
+KenTurkey
+Cormen
+Alfred
+20
+Joyce - Martin 0:2
+Mc'Donald - Alfred 0:2
+Jackson - Mike 4:1
+Bo - Mike 5:3
+KenTurkey - Mc'Donald 7:3
+Mike - Jackson 6:9
+Cormen - Nepoleon 0:2
+Mc'Donald - Bo 4:4
+Jackson - Cormen 3:2
+KenTurkey - Mike 1:0
+Cormen - Mc'Donald 4:2
+Mike - Bo 3:2
+Mike - Nepoleon 1:3
+Cormen - Joyce 2:4
+Bo - Joyce 4:1
+Nepoleon - Mike 2:2
+Alfred - Martin 4:4
+KenTurkey - Joyce 0:0
+Mc'Donald - Nepoleon 1:2
+Nepoleon - Mc'Donald 6:6

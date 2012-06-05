@@ -1,0 +1,20 @@
+9 8
+...AAAA.
+.DDDD.A.
+.D.ADAA.
+CDDDD...
+C.C.....
+CCC.BBBB
+EEE.B..B
+E.E.BBBB
+EEE.....
+9 8
+...AAAA.
+.DDDD.A.
+.EEEEAA.
+CEDDE...
+CEC.E...
+CEEEEBBB
+....B..B
+....BBBB
+........

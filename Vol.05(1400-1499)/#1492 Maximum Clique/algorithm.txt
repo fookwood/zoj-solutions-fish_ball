@@ -1,0 +1,740 @@
+排列组合算法 
+1。最近一直在考虑从m个数里面取n个数的算法。最容易理解的就是递归，但是其效率，实在不能使用。一直找寻中，今日得果
+
+2。算法来源与互联网
+
+组合算法   
+  本程序的思路是开一个数组，其下标表示1到m个数，数组元素的值为1表示其下标   
+  代表的数被选中，为0则没选中。     
+  首先初始化，将数组前n个元素置1，表示第一个组合为前n个数。     
+  然后从左到右扫描数组元素值的“10”组合，找到第一个“10”组合后将其变为   
+  “01”组合，同时将其左边的所有“1”全部移动到数组的最左端。     
+  当第一个“1”移动到数组的m-n的位置，即n个“1”全部移动到最右端时，就得   
+  到了最后一个组合。     
+  例如求5中选3的组合：     
+  1   1   1   0   0   //1,2,3     
+  1   1   0   1   0   //1,2,4     
+  1   0   1   1   0   //1,3,4     
+  0   1   1   1   0   //2,3,4     
+  1   1   0   0   1   //1,2,5     
+  1   0   1   0   1   //1,3,5     
+  0   1   1   0   1   //2,3,5     
+  1   0   0   1   1   //1,4,5     
+  0   1   0   1   1   //2,4,5     
+  0   0   1   1   1   //3,4,5   
+
+全排列算法   
+    
+  从1到N，输出全排列，共N！条。   
+  分析：用N进制的方法吧。设一个N个单元的数组，对第一个单元做加一操作，满N进   
+  一。每加一次一就判断一下各位数组单元有无重复，有则再转回去做加一操作，没   
+  有则说明得到了一个排列方案。
+
+ //////////////////////////////////////////////////////
+
+递归算法
+
+
+    全排列是将一组数按一定顺序进行排列，如果这组数有n个，那么全排列数为n!个。现以{1, 2, 3, 4, 5}为
+例说明如何编写全排列的递归算法。
+
+1、首先看最后两个数4, 5。 它们的全排列为4 5和5 4, 即以4开头的5的全排列和以5开头的4的全排列。
+由于一个数的全排列就是其本身，从而得到以上结果。
+2、再看后三个数3, 4, 5。它们的全排列为3 4 5、3 5 4、 4 3 5、 4 5 3、 5 3 4、 5 4 3 六组数。
+即以3开头的和4,5的全排列的组合、以4开头的和3,5的全排列的组合和以5开头的和3,4的全排列的组合.
+从而可以推断，设一组数p = {r1, r2, r3, ... ,rn}, 全排列为perm(p)，pn = p - {rn}。
+因此perm(p) = r1perm(p1), r2perm(p2), r3perm(p3), ... , rnperm(pn)。当n = 1时perm(p} = r1。
+为了更容易理解，将整组数中的所有的数分别与第一个数交换，这样就总是在处理后n-1个数的全排列。
+
+算法如下：
+#include <stdio.h>  
+
+int n = 0;  
+
+void swap(int *a, int *b) 
+{     
+    int m;     
+    m = *a;     
+    *a = *b;     
+    *b = m; 
+}  
+void perm(int list[], int k, int m) 
+{     
+    int i;     
+    if(k > m)     
+    {          
+        for(i = 0; i <= m; i++)             
+            printf("%d ", list[i]);         
+        printf("\n");         
+        n++;     
+    }     
+    else     
+    {         
+        for(i = k; i <= m; i++)         
+        {             
+            swap(&list[k], &list[i]);             
+            perm(list, k + 1, m);             
+            swap(&list[k], &list[i]);         
+        }     
+    } 
+} 
+int main() 
+{     
+    int list[] = {1, 2, 3, 4, 5};     
+    perm(list, 0, 4);     
+    printf("total:%d\n", n);     
+    return 0; 
+}  
+
+谁有更高效的递归和非递归算法，请回贴。
+
+///////////////////////////////////////
+
+全排序
+
+设R={r1,r2,...,rn}是要进行排列的n个元素，Ri = R-{ri}. 集合 X 中元素的全排列记为Perm(X)。(ri)Perm(X)表示在全排列Perm(X)的每一个排列上加前缀ri得到的排列。R的全排列可归纳定义如下：
+
+当 n = 1 时， Perm(R) = (r),其中r 是集合R中唯一的元素；
+
+当 n >1 时， Perm(R)有 (r1)Perm(R1),(r2)Perm(R2),.......,(rn)Perm(Rn)构成
+
+依此递归定义，可设计产生Perm(R)的递归算法如下：
+
+template <class Type>
+
+void Perm(Type list[], int k, int m){
+
+    if ( k == m ){
+
+        for ( int i = 0; i <= m; i++)
+
+                    cout << list[i];
+
+        cout << endl;
+
+    }
+
+    else{
+
+        for ( int i = k; i <= m; i ++){
+
+           Swap( list[k],list[i] );
+
+           Perm( list,k + 1, m ) ;
+
+         Swap( list[k], list[i] );
+
+         }
+
+    }
+
+}
+
+template < class Type >
+
+inline void Swap ( Type &a ,Type & b)
+
+{
+
+         Type temp = a; a = b; b = temp;
+
+}
+
+////////////////////////////////////////
+
+  排列组合问题的通用算法
+
+    尽管排列组合是生活中经常遇到的问题，可在程序设计时，不深入思考或者经验不足都让人无从下手。由于排列组合问题总是先取组合再排列，并且单纯的排列问题相对简单，所以本文仅对组合问题的实现进行详细讨论。以在n个数中选取m(0<m<=n)个数为例，问题可分解为：
+1. 首先从n个数中选取编号最大的数，然后在剩下的n-1个数里面选取m-1个数，直到从n-(m-1)个数中选取1个数为止。
+2. 从n个数中选取编号次小的一个数，继续执行1步，直到当前可选编号最大的数为m。
+很明显，上述方法是一个递归的过程，也就是说用递归的方法可以很干净利索地求得所有组合。
+下面是递归方法的实现：
+/// 求从数组a[1..n]中任选m个元素的所有组合。
+/// a[1..n]表示候选集，m表示一个组合的元素个数。
+/// b[1..M]用来存储当前组合中的元素, 常量M表示一个组合中元素的个数。
+void combine( int a[], int n, int m,  int b[], const int M )
+{ 
+ for(int i=n; i>=m; i--)  // 注意这里的循环范围
+ {
+  b[m-1] = i - 1;
+  if (m > 1)
+   combine(a,i-1,m-1,b,M);
+  else      // m == 1, 输出一个组合
+  {   
+   for(int j=M-1; j>=0; j--)
+    cout << a[b[j]] << " ";
+   cout << endl;
+  }
+ }
+}
+
+因为递归程序均可以通过引入栈，用回溯转化为相应的非递归程序，所以组合问题又可以用回溯的方法来解决。为了便于理解，我们可以把组合问题化归为图的路径遍历问题，在n个数中选取m个数的所有组合，相当于在一个这样的图中（下面以从1,2,3,4中任选3个数为例说明）求从[1,1]位置出发到达[m,x] (m<=x<=n)位置的所有路径：
+1  2  3  4
+    2  3  4
+        3  4
+上图是截取n×n右上对角矩阵的m行构成，我们要求的所有组合就相当于从第一行的第一列元素[1,1]出发，到第三行的任意一列元素作为结束的所有路径，规定每走一步需跨越一行，并且从上一行的任何一个元素到其下一行中列处于其右面的任何一个元素均有一路径相连，显然任一路径经过的数字序列就对应一个符合要求的组合。
+下面是非递归的回溯方法的实现：
+/// 求从数组a[1..n]中任选m个元素的所有组合。
+/// a[1..n]表示候选集，m表示一个组合的元素个数。
+/// 返回所有排列的总数。
+int combine(int a[], int n, int m)
+{  
+ m = m > n ? n : m;
+
+ int* order = new int[m+1];   
+ for(int i=0; i<=m; i++)
+  order[i] = i-1;            // 注意这里order[0]=-1用来作为循环判断标识
+ 
+ int count = 0;                               
+ int k = m;
+ bool flag = true;           // 标志找到一个有效组合
+ while(order[0] == -1)
+ {
+  if(flag)                   // 输出符合要求的组合
+  {  
+   for(i=1; i<=m; i++)                   
+    cout << a[order[i]] << " ";
+   cout << endl;
+   count++;
+   flag = false;
+  }
+
+  order[k]++;                // 在当前位置选择新的数字
+  if(order[k] == n)          // 当前位置已无数字可选，回溯
+  {
+   order[k--] = 0;
+   continue;
+  }    
+ 
+  if(k < m)                  // 更新当前位置的下一位置的数字         
+  {
+   order[++k] = order[k-1];
+   continue;
+  }
+ 
+  if(k == m)
+   flag = true;
+ }
+
+ delete[] order;
+ return count;
+}
+
+下面是测试以上函数的程序：
+int main()
+{
+ const int N = 4;
+ const int M = 3;
+ int a[N];
+ for(int i=0;i<N;i++)
+  a[i] = i+1;
+
+ // 回溯方法
+ cout << combine(a,N,3) << endl; 
+
+ // 递归方法
+ int b[M];
+ combine(a,N,M,b,M); 
+
+ return 0;
+}
+
+由上述分析可知，解决组合问题的通用算法不外乎递归和回溯两种。在针对具体问题的时候，因为递归程序在递归层数上的限制，对于大型组合问题而言，递归不是一个好的选择，这种情况下只能采取回溯的方法来解决。
+
+    n个数的全排列问题相对简单，可以通过交换位置按序枚举来实现。STL提供了求某个序列下一个排列的算法next_permutation，其算法原理如下：
+1. 从当前序列最尾端开始往前寻找两个相邻元素，令前面一个元素为*i，后一个元素为*ii，且满足*i<*ii；
+2. 再次从当前序列末端开始向前扫描，找出第一个大于*i的元素，令为*j（j可能等于ii），将i，j元素对调；
+3. 将ii之后（含ii）的所有元素颠倒次序，这样所得的排列即为当前序列的下一个排列。
+其实现代码如下：
+template <class BidirectionalIterator>
+bool next_permutation(BidirectionalIterator first, BidirectionalIterator last)
+{
+  if (first == last) return false;   // 空範圍
+  BidirectionalIterator i = first;
+  ++i;
+  if (i == last) return false;       // 只有一個元素
+  i = last;                          // i 指向尾端
+  --i;
+
+ for(;;)
+ {
+  BidirectionalIterator ii = i;
+  --i;
+  // 以上，鎖定一組（兩個）相鄰元素
+  if (*i < *ii)                     // 如果前一個元素小於後一個元素
+  { 
+   BidirectionalIterator j = last;  // 令 j指向尾端
+   while (!(*i < *--j));            // 由尾端往前找，直到遇上比 *i 大的元素
+   iter_swap(i, j);                 // 交換 i, j
+   reverse(ii, last);               // 將 ii 之後的元素全部逆向重排
+   return true;
+  }
+  if (i == first)                   // 進行至最前面了
+  { 
+   reverse(first, last);            // 全部逆向重排
+   return false;
+  }
+ }
+}
+
+下面程序演示了利用next_permutation来求取某个序列全排列的方法：
+int main()
+{
+ int ia[] = {1,2,3,4};
+ vector<int> iv(ia,ia+sizeof(ia)/sizeof(int));
+
+ copy(iv.begin(),iv.end(),ostream_iterator<int>(cout," "));
+ cout << endl;
+ while(next_permutation(iv.begin(),iv.end()))
+ {
+  copy(iv.begin(),iv.end(),ostream_iterator<int>(cout," "));
+  cout << endl;
+ }
+
+ return 0;
+}
+注意：上面程序中初始序列是按数值的从小到大的顺序排列的，如果初始序列无序的话，上面程序只能求出从当前序列开始的后续部分排列，也就是说next_permutation求出的排列是按排列从小到大的顺序进行的。
+
+///////////////////////////////////////////////////////
+
+排列组合与回溯算法
+
+KuiBing
+
+感谢Bamboo、LeeMaRS的帮助
+
+[关键字] 递归 DFS
+
+[前言] 这篇论文主要针对排列组合对回溯算法展开讨论，在每一个讨论之后，还有相关的推荐题。在开始之前，我们先应该看一下回溯算法的概念，所谓回溯：就是搜索一棵状态树的过程，这个过程类似于图的深度优先搜索（DFS），在搜索的每一步（这里的每一步对应搜索树的第i层）中产生一个正确的解，然后在以后的每一步搜索过程中，都检查其前一步的记录，并且它将有条件的选择以后的每一个搜索状态（即第i+1层的状态节点）。
+
+需掌握的基本算法：
+
+排列：就是从n个元素中同时取r个元素的排列，记做P(n,r)。（当r=n时，我们称P(n,n)=n!为全排列）例如我们有集合OR = {1,2,3,4},那么n = |OR| = 4,切规定r=3，那么P(4,3)就是：
+
+{1,2,3}; {1,2,4}; {1,3,2}; {1,3,4};{1,4,2};{1,4,3};{2,1,3};{2,1,4}; {2,3,1}; {2,3,4}; {2,4,1}; {2,4,3}; {3,1,2}; {3,1,4}; {3,2,1}; {3,2,4}; {3,4,1}; {3,4,2}; {4,1,2}; {4,1,3}; {4,2,1}; {4,2,3}; {4,3,1}; {4,3,2}
+
+算法如下：
+
+int  n, r;
+char used[MaxN];
+int  p[MaxN];
+ 
+void permute(int pos)
+{ int i;
+/*如果已是第r个元素了，则可打印r个元素的排列 */
+    if (pos==r) {
+        for (i=0; i<r; i++)
+            cout << (p[i]+1);
+        cout << endl;
+        return;
+    }
+    for (i=0; i<n; i++)
+        if (!used[i]) { /*如果第i个元素未用过*/
+/*使用第i个元素，作上已用标记，目的是使以后该元素不可用*/
+            used[i]++;
+/*保存当前搜索到的第i个元素*/
+            p[pos] = i;
+/*递归搜索*/
+           permute(pos+1);
+ 
+/*恢复递归前的值，目的是使以后改元素可用*/
+ used[i]--;
+        }
+}
+
+相关问题
+UVA 524 Prime Ring Problem
+
+ 
+
+可重排列：就是从任意n个元素中，取r个可重复的元素的排列。例如，对于集合OR={1,1,2,2}, n = |OR| = 4, r = 2,那么排列如下：
+
+{1,1}; {1,2}; {1,2}; {1,1}; {1,2}; {1,2}; {2,1}; {2,1}; {2,2}; {2,1}; {2,1}; {2,2}
+
+则可重排列是：
+
+{1,1}; {1,2}; {2,1}; {2,2}.
+
+算法如下：
+
+#define FREE -1
+int n, r;
+/*使元素有序*/
+int E[MaxN] = {0,0,1,1,1};
+int P[MaxN];
+char used[MaxN];
+ 
+void permute(int pos)
+{
+int i;
+/*如果已选了r个元素了，则打印它们*/
+    if (pos==r)  {
+        for (i=0; i<r; i++)
+            cout << P[i];
+        cout << endl;
+        return;
+    }
+/*标记下我们排列中的以前的元素表明是不存在的*/
+    P[pos] = FREE;
+    for (i=0; i<n; i++)
+/*如果第I个元素没有用过，并且与先前的不同*/
+        if (!used[i] && E[i]!=P[pos]) {
+/*使用这个元素*/
+            used[i]++;
+/*选择现在元素的位置*/
+            P[pos] = E[i];
+/*递归搜索*/
+            permute(pos+1);
+/*恢复递归前的值*/
+            used[i]--;
+        }
+}
+
+相关习题
+UVA 10098 Generating Fast, Sorted Permutations
+
+ 
+
+组合：从n个不同元素中取r个不重复的元素组成一个子集，而不考虑其元素的顺序，称为从n个中取r个的无重组合，例如OR = {1,2,3,4}, n = 4, r = 3则无重组合为：
+
+{1,2,3}; {1,2,4}; {1,3,4}; {2,3,4}.
+
+算法如下：
+
+int n, r;
+int C[5];
+char used[5];
+ 
+void combine(int pos, int h)
+{
+int i;
+/*如果已选了r个元素了，则打印它们*/
+    if (pos==r) {
+        for (i=0; i<r; i++)
+            cout<< C[i];
+        cout<< endl;
+        return;
+    }
+    for (i=h; i<=n-r+pos; i++) /*对于所有未用的元素*/
+        if (!used[i]) {
+/*把它放置在组合中*/
+            C[pos] = i;
+/*使用该元素*/
+ used[i]++;
+/*搜索第i+1个元素*/
+     combine(pos+1,i+1);
+/*恢复递归前的值*/
+ used[i]--;
+        }
+}
+
+相关问题：
+Ural 1034 Queens in peaceful position
+
+ 
+
+可重组合：类似于可重排列。
+
+[例] 给出空间中给定n(n<10)个点，画一条简单路径，包括所有的点，使得路径最短。
+
+解:这是一个旅行售货员问题TSP。这是一个NP问题，其实就是一个排列选取问题。
+
+算法如下：
+
+int  n, r;
+char used[MaxN];
+int  p[MaxN];
+double min;
+ 
+void permute(int pos, double dist)
+{
+int i;
+    if (pos==n) {
+        if (dist < min) min = dist;
+        return;
+    }
+    for (i=0; i<n; i++)
+        if (!used[i]) {
+            used[i]++;
+            p[pos] = i;
+           if (dist + cost(point[p[pos-1]], point[p[pos]]) < min)
+                permute(pos+1, dist + cost(point[p[pos-1]], point[p[pos]]));
+ used[i]--;
+        }
+}
+
+[例]对于0和1的所有排列，从中同时选取r个元素使得0和1的数量不同。
+
+解 这道题很简单，其实就是从0到2^r的二元表示。
+
+算法如下：
+
+void dfs(int pos)
+{
+   if (pos == r)
+   {
+       for (i=0; i<r; i++) cout<<p[i];
+       cout<<endl;
+       return;
+   }
+   p[pos] = 0;
+   dfs(pos+1);
+   p[pos] = 1;
+   dfs(pos+1);}
+
+相关问题：
+
+Ural
+
+1005 Stone pile
+1060 Flip Game
+1152 The False Mirrors
+
+ 
+
+[例]找最大团问题。
+
+一个图的团，就是包括了图的所有点的子图，并且是连通的。也就是说，一个子图包含了n个顶点和n*(n-1)/2条边，找最大团问题是一个NP问题。算法如下：
+
+#define MaxN 50
+ 
+int  n, max;
+int  path[MaxN][MaxN];
+int  inClique[MaxN];
+ 
+void dfs(int inGraph[])
+{
+int i, j;
+int Graph[MaxN];
+ 
+if ( inClique[0]+inGraph[0]<=max ) return;
+if ( inClique[0]>max ) max=inClique[0];
+ 
+/*对于图中的所有点*/
+    for (i=1; i<=inGraph[0]; i++)
+    {
+/*把节点放置到团中*/
+        ++inClique[0];
+ inClique[inClique[0]]=inGraph[i];
+/*生成一个新的子图*/
+ Graph[0]=0;
+ for (j=i+1; j<=inGraph[0]; j++)
+     if (path[inGraph[i]][inGraph[j]] )
+          Graph[++Graph[0]]=inGraph[j];
+     dfs(Graph);
+/*从团中删除节点*/
+        --inClique[0];}
+}
+int main()
+{
+int inGraph[MaxN];
+int i, j;
+  cin >>n;
+  while (n > 0)
+  {
+        for (i=0; i<n; i++)
+ for (j=0; j<n; j++)
+     cin >>path[i][j];
+        max = 1;
+/*初始化*/
+        inClique[0]= 0;
+        inGraph[0] = n;
+ for (i=0; i<n; i++) inGraph[i+1]=i;
+        dfs(inGraph);
+        cout<<max<<endl;
+        cin >>n;
+  }
+  return 0;}
+
+ 
+
+ 参考论文 <A fast algorithm for the maximum clique problem>
+
+相关问题：
+
+acm.zju.edu.cn: 1492 maximum clique
+
+ 
+
+相关网站
+
+http://acm.uva.es/p
+
+http://acm.timus.ru/
+
+ 
+
+Contact me:
+
+MSN: Bing0672@Hotmail.com
+
+/////////////////////////
+
+  求集合子集，和全排列的递归算法实现(c++,Dev C++调试通过)
+
+
+求集合全排列算法实现:
+
+求集合所有子集的算法实现:
+
+1.求集合全排列算法实现:
+
+/*
+  Name:
+  Copyright:
+  Author: XuLei
+  Date: 01-11-05 09:40
+  Description:求一个字符串集合(List)的全排列，一共有n!种(假设字符数为n)
+  Algorithms:令E= {e1 , ..., en }表示n 个元素的集合，我们的目标是生成该集合的所有排列方式。令Ei
+             为E中移去元素i 以后所获得的集合，perm (X) 表示集合X 中元素的排列方式，ei.p e r m
+             (X)表示在perm (X) 中的每个排列方式的前面均加上ei 以后所得到的排列方式。例如，如果
+             E={a, b, c}，那么E1={b, c}，perm (E1 )=( b c, c b)，e1 .perm(E1) = (a b c, a c b)。
+             对于递归的基本部分，采用n = 1。当只有一个元素时，只可能产生一种排列方式，所以
+             perm (E) = (e)，其中e 是E 中的唯一元素。当n > 1时，perm (E) = e1 .perm(E1) +e2 .p e r m
+             (E2) +e3.perm(E3) + ... +en .perm (En)。这种递归定义形式是采用n 个perm(X) 来定义perm(E),
+             其中每个X 包含n-1个元素。至此，一个完整的递归定义所需要的基本部分和递归部分都已完成。
+*/
+#include <iostream>
+using namespace std;
+//const int ListLength=10;
+const int ListLength=3;     //字符串数组的长度
+void Swap(char &c, char &s) //交换字符c和s
+{
+     char temp=c;
+     c=s;
+     s=temp;
+}
+void Perm(char *List, int m, int k)
+{
+     static int count=0;
+     if(m==k)
+     {
+             cout<<++count<<":";
+             for(int i=0; i<=ListLength-1; i++)
+             {
+                     cout<<List[i];
+             }            
+             cout<<endl;
+     }
+     else
+     {
+         for(int i=m; i<=k; i++)
+         {
+                  Swap(List[m],List[i]);
+                  Perm(List, m+1, k);
+                  Swap(List[m],List[i]);
+                 
+         }        
+     }
+        
+}
+int main()
+{
+    //char List[ListLength]={'a','b','c','d','e','f','g','h','i','j'};
+    char List[ListLength]={'a','b','c'};
+    Perm(List, 0, ListLength-1);
+    system("pause");
+    return 0; 
+
+}
+
+2. 求集合所有子集的算法实现:
+
+/*
+  Name:
+  Copyright:
+  Author: XuLei
+  Date: 01-11-05 11:34
+  Description: 求一个集合(List)的所有子集，并输出
+  Algorithms: 由SubSet函数来求所有的子集，SubSet(char *List, int m, char *Buffer, int flag)
+              基本思想为首先取出List[m],然后依次把List[m+1...ListLength-1]加到List[m]后面，
+              每加一个，存储在集合Buffer[]中,并输出。由flag标识数组Buffer的长度。
+              以集合{a,b,c}为例，首先取出a存入Buffer[0],输出。
+                                 然后调用SubSet(char *List, 1, char *Buffer, 1)把Buffer[1]=b
+                                    输出ab。
+                                 再调用SubSet(char *List, 2, char *Buffer, 2) 把Buffer[2]=c
+                                    输出abc。
+                                 再进入SubSet(char *List, 1, char *Buffer, 1) 把Buffer[1]=c
+                                    输出ac。
+                                 退回最外层的循环。
+                                 取出b存入Buffer[0],输出。
+                                 然后调用SubSet(char *List, 1, char *Buffer, 1)把Buffer[1]=c
+                                    输出bc。
+                                 取出c存入Buffer[0],输出。               
+*/
+#include <iostream>
+using namespace std;
+const int ListLength=10;
+//const int ListLength=3;
+
+//输出Buffer集合
+void Output(char *Buffer, int flag)
+{
+     static int count=1;
+     if(count==1)
+     {
+              cout<<count++<<": { }"<<endl;        
+     }
+     cout<<count++<<": {";
+     for(int i=0; i<=flag; i++)
+     {
+              cout<<Buffer[i];            
+     }
+     cout<<"}"<<endl;
+}
+//找到元素c在集合List中的位置
+int Index(char *List, char c)
+{
+     for(int i=0; i<=ListLength-1; i++)
+     {
+              if(c==List[i])
+              {
+                    return i;            
+                    break;
+              }                 
+     }
+     return -1;    
+}
+
+void SubSet(char *List, int m, char *Buffer, int flag)
+{    
+     if(m <= ListLength-1)
+     {
+          /*if(m==0)
+          {
+                  Buffer[0]=List[0];
+          }*/
+          //Buffer[flag]=List[m];
+          /*if(flag==0)
+          {
+                Buffer[flag]=List[m];
+          }*/
+         
+          for(int i=(flag==0) ? 0 : Index(List,Buffer[flag-1])+1; i<=ListLength-1; i++)
+          //当flag==0时，Buffer中没有任何元素，此时i=[0...ListLength-1]
+          //当flag>0时，找到Buffer中的最后一个元素在集合List中的位置i，把[i....ListLength-1]
+          //处的元素，加到Buffer元素的最后面
+          {
+                Buffer[flag]=List[i];               
+                Output(Buffer,flag);
+                SubSet(List, m+1, Buffer,flag+1);
+          }         
+     }
+     return;
+}
+
+int main()
+{
+    char List[ListLength]={'a','b','c','d','e','f','g','h','i','j'};  
+    //char List[ListLength]={'a','b','c'};
+    char Buffer[ListLength]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' '};
+    //char Buffer[ListLength]={' ',' ',' '};
+    //int flag=0;
+    //TEST
+    //cout<<Index(List,'c');  OK
+    SubSet(List,0,Buffer,0);
+    system("pause");
+    return 0;  
+}
+
+///////////////////////////////////////////////////////////////////////

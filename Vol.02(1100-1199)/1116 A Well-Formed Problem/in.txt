@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<customer>
+       <name>
+               <first>John</first>
+               <last>Doe</last>
+       </name>
+       <address>
+               <street>
+                       <address>15</address>
+                       <direction>West</direction>
+                       <name>34th</name>
+               </street>
+               <city>New York</city>
+               <state-code>NY</state-code>
+               <zip-code format="PLUS4">10001-0001</zip-code>
+               <country-code>USA</country-code>
+       </address>
+       <orders/>
+</customer>
+
+<?xml version="1.0"?>
+<acm-contest-problem>
+        <title>A Well-Formed Problem</title>
+        <text>XML, eXtensible Markup Language, is poised to become the lingua franca of
+structured data communication for the foreseeable future. [...]</text>
+        <input>probleme.in</input>
+        <output>probleme.out</output>
+</acm-contest-problem>
+
+<?xml version="1.0"?>
+<customer>
+       <name>
+               <first>John</first>
+               <last>Doe</last>
+       </name>
+       <address>
+               <street>
+                       <number>15</number>
+                       <direction>West</direction>
+                       <name>34th</name>
+               </street>
+               <city>New York</city>
+               <state-code>NY</state-code>
+               <zip-code format="PLUS4">10001-0001</zip-code>
+               <country-code>USA</country-code>
+       </address>
+       <orders/>
+</customer>
+
+
+<?xml version="1.0"?>
+<customer>
+       <name>
+               <first>John</first>
+               <last>Doe</last>
+       </name>
+       <address>
+               <street>
+                       <number>15</number>
+                       <direction>West</direction>
+                       <name>34th</name>
+               </street1>
+               <city>New York</city>
+               <state-code>NY</state-code>
+               <zip-code format="PLUS4">10001-0001</zip-code>
+               <country-code>USA</country-code>
+       </address>
+       <orders/>
+</customer>
+
+
+<?xml version="1.0"?>
+<customer>
+       <name>
+               <first>John</first>
+               <last>Doe</last>
+       </name>
+       <address>
+               <street>
+                       <number>15</number>
+                       <direction>West</direction>
+                       <name>34th</name>
+               </street>
+               <city>New York</city>
+               <state-code>NY</state-code>
+               <zip-code format="PLUS4>10001-0001</zip-code>
+               <country-code>USA</country-code>
+       </address>
+       <orders/>
+</customer>
+
+<?xml version="1.0"?>
+<shopping-list>
+        <items>
+                <item quantity="1" quantity="1">Gallon of milk</item>
+                <item>Frozen pizza
+        </items>
+</Shopping-list>
+<errand-list>
+        <errand>Get some cash at the ATM
+                <errand>Pick up dry cleaning</errand>
+        </errand>
+</errand-list>
+<?end?>

@@ -1,0 +1,826 @@
+From: <ÓÉ Windows Internet Explorer 7 ±£´æ>
+Subject: =?gb2312?B?Wm9qPzEyMjI/SnVzdD90aGU/RmFjdHMgLS0gyN/T4LXEtPrC6yAtLSCx4A==?=
+	=?gb2312?B?s8ywrrrD1d9CTE9H?=
+Date: Tue, 30 Sep 2008 22:51:16 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_000D_01C9234F.0BACC3B0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_000D_01C9234F.0BACC3B0
+Content-Type: text/html;
+	charset="gb2312"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.programfan.com/blog/article.asp?id=23607
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML><HEAD><TITLE>Zoj&nbsp;1222&nbsp;Just&nbsp;the&nbsp;Facts -- =
+=C8=DF=D3=E0=B5=C4=B4=FA=C2=EB -- =
+=B1=E0=B3=CC=B0=AE=BA=C3=D5=DFBLOG</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dgb2312">
+<SCRIPT type=3Dtext/javascript>
+<!--
+function doZoom(size)
+{
+	document.getElementById('td_content').style.fontSize=3Dsize+'px';
+}
+
+function strLen(str)
+{
+	 var Chinese_OS;
+	 var strTest, ch, slen, i;
+	 Chinese_OS =3D false;
+	 strTest =3D "=D6=D0=CE=C4";
+	 if ( strTest.length =3D=3D 2 ) Chinese_OS =3D true;
+	 if ( Chinese_OS ) {
+	  slen =3D 0;
+	  for ( i=3D0; i< str.length; i++){
+	   ch =3D str.charCodeAt( i );
+	   if ( ch<0 ) ch =3D ch + 65536;
+	   if ( ch>255 ) slen =3D slen +1;
+	   slen =3D slen +1;
+	  }
+	 }
+	 else
+	 {
+	  slen =3D str.length
+	 }
+	 return (slen);
+}
+
+function check(form) {    =20
+	if (form.getcode && (form.getcode.value)=3D=3D"")
+	{
+		alert("=C7=EB=CA=E4=C8=EB=D1=E9=D6=A4=C2=EB=A3=A1");    =20
+		return false;=20
+	}
+	if (strLen(form.content.value)=3D=3D0)
+	{
+		alert("=C7=EB=CA=E4=C8=EB=C4=DA=C8=DD=A3=A1");    =20
+		return false;=20
+	}
+	if (strLen(form.content.value)>500)
+	{
+		=
+alert("=C4=FA=CA=E4=C8=EB=B5=C4=C4=DA=C8=DD=B3=AC=B9=FD=C1=CB500=D7=D6=A3=
+=AC=C7=EB=D0=DE=B8=C4=BA=F3=D4=D9=B7=A2=CB=CD=A3=A1");    =20
+		return false;=20
+	}
+	form.SubmitComment.value =3D =
+"=C6=C0=C2=DB=CC=E1=BD=BB=D6=D0=A3=AC=C7=EB=C9=D4=BA=F3";
+	form.SubmitComment.disabled =3D true;
+	return true;    =20
+	form.submit();    =20
+}    =20
+
+function delcomment(id)
+{
+	document.delcomment.commentid.value=3Did;
+	document.delcomment.submit();
+}
+
+var iscode =3D 0;
+function txtfocus(){
+	if (iscode =3D=3D 0)
+	{
+		=
+document.getElementById('code').innerHTML=3D"=D1=E9=D6=A4=C2=EB:&nbsp;&nb=
+sp;&nbsp;<input name=3Dgetcode type=3Dtext size=3D6 maxlength=3D6><img =
+src=3D\"http://blog.programfan.com/code.asp\">";=20
+		iscode =3D 1;
+	}
+}
+//-->
+</SCRIPT>
+
+<STYLE type=3Dtext/css>#td_content TABLE {
+	WIDTH: 100%
+}
+</STYLE>
+
+<META content=3D"MSHTML 6.00.6000.16705" name=3DGENERATOR></HEAD>
+<BODY>
+<STYLE type=3Dtext/css>BODY {
+	MARGIN-TOP: 3px; MARGIN-BOTTOM: 3px; BACKGROUND-COLOR: #c64963
+}
+.td_style1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: gray; LINE-HEIGHT: 20px
+}
+P {
+	FONT-SIZE: 9pt; FONT-FAMILY: =CB=CE=CC=E5,arial
+}
+LI {
+	FONT-SIZE: 9pt; FONT-FAMILY: =CB=CE=CC=E5,arial
+}
+TD {
+	FONT-SIZE: 9pt; FONT-FAMILY: =CB=CE=CC=E5,arial
+}
+.td_content {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 150%
+}
+A:link {
+	COLOR: palevioletred; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: palevioletred; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: palevioletred; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: gray; TEXT-DECORATION: underline
+}
+.list {
+	MARGIN-LEFT: 15px; WORD-BREAK: break-all; TEXT-INDENT: 5px; =
+LINE-HEIGHT: 20px; MARGIN-RIGHT: 15px; WORD-WRAP: break-word
+}
+.list_top {
+	FONT-SIZE: 14px; TEXT-INDENT: 5px; LINE-HEIGHT: 25px; BACKGROUND-COLOR: =
+#fff3f7
+}
+.list_center {
+	TEXT-INDENT: 5px; LINE-HEIGHT: 20px
+}
+.list_bottom {
+	TEXT-INDENT: 5px; LINE-HEIGHT: 20px; TEXT-ALIGN: right
+}
+.list_bottom SPAN {
+	COLOR: gray
+}
+</STYLE>
+
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D755 align=3Dcenter =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD =
+background=3Dhttp://blog.programfan.com/template/skin6/bk.gif><BR>
+      <TABLE class=3Dtb_topbottom width=3D"98%" align=3Dcenter =
+border=3D0>
+        <TBODY>
+        <TR>
+          <TD>
+            <P style=3D"FONT-SIZE: 18pt" align=3Dleft>&nbsp;<A =
+class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801"><STRONG>=C8=DF=
+=D3=E0=B5=C4=B4=FA=C2=EB</STRONG><SPAN=20
+            class=3Dfontsize10>&nbsp;&nbsp;(stcrux =B5=C4 =
+BLOG)</SPAN></A>&nbsp;<A=20
+            =
+href=3D"http://blog.programfan.com/rss.asp?author=3Dstcrux"><IMG=20
+            src=3D"http://blog.programfan.com/image/rss2.gif"=20
+        border=3D0></A></P></TD></TR>
+        <TR>
+          <TD>
+            <DIV =
+align=3Dleft>&nbsp;&nbsp;=BF=EC=BD=DD=D3=F2=C3=FB=A3=BA<A class=3Da1=20
+            =
+href=3D"http://cruxd.programfan.com/">http://cruxd.programfan.com/</A></D=
+IV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D755 align=3Dcenter =
+border=3D0>
+  <TBODY>
+  <TR vAlign=3Dtop=20
+    background=3D"http://blog.programfan.com/template/skin6/bk.gif"><TD=20
+    style=3D"PADDING-LEFT: 5px" width=3D555=20
+    background=3Dhttp://blog.programfan.com/template/skin6/bk.gif>
+      <DIV=20
+      style=3D"MARGIN-LEFT: 10px; WIDTH: 95%; WORD-BREAK: break-all; =
+WORD-WRAP: break-word">
+      <DIV=20
+      style=3D"FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #ff0000; =
+TEXT-ALIGN: =
+center"><BR>Zoj&nbsp;1222&nbsp;Just&nbsp;the&nbsp;Facts</DIV>
+      <DIV =
+align=3Dcenter>=B5=E3=BB=F7=CA=FD=A3=BA1914&nbsp;&nbsp;&nbsp;&nbsp;=B7=A2=
+=B2=BC=C8=D5=C6=DA=A3=BA2007-3-2=20
+      22:54:00&nbsp;&nbsp;<BR><A =
+title=3D"=B1=A3=B4=E6=D6=C1=B1=E0=B3=CC=B0=AE=BA=C3=D5=DF=CA=D5=B2=D8=BC=D0=
+ myweb.pfan.cn"=20
+      =
+href=3D"javascript:d=3Ddocument;t=3Dd.selection?(d.selection.type!=3D'Non=
+e'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():''=
+);void(myweb=3Dwindow.open('http://myweb.pfan.cn/mywebedit.asp?title=3D'+=
+escape(d.title)+'&amp;url=3D'+escape(d.location.href),'myweb','scrollbars=
+=3Dno,width=3D480,height=3D480,left=3D75,top=3D20,status=3Dno,resizable=3D=
+yes'));">=A1=BE=CA=D5=B2=D8=A1=BF</A>&nbsp;<A=20
+      =
+href=3D"http://www.programfan.com/blog/article.asp?id=3D23607#comment">=A1=
+=BE=C6=C0=C2=DB=A1=BF</A>&nbsp;<A=20
+      =
+href=3D"javascript:window.print()">=A1=BE=B4=F2=D3=A1=A1=BF</A>&nbsp;<A=20
+      href=3D"http://bbs.pfan.cn/" =
+target=3D_blank>=A1=BE=B1=E0=B3=CC=B0=AE=BA=C3=D5=DF=C2=DB=CC=B3=A1=BF</A=
+>&nbsp;<A=20
+      =
+href=3D"javascript:window.close()">=A1=BE=B9=D8=B1=D5=A1=BF</A><BR></DIV>=
+
+      <DIV style=3D"TEXT-ALIGN: right">=B1=EA=C7=A9:<A=20
+      =
+href=3D"http://www.programfan.com/blog/list.asp?author=3Dstcrux&amp;tag=3D=
+%CA%FD%C2%DB"=20
+      target=3D_blank>=CA=FD=C2=DB</A>&nbsp;<BR>&nbsp;</DIV>
+      <DIV style=3D"WIDTH: 520px; WORD-BREAK: break-all; WORD-WRAP: =
+break-word">
+      <DIV id=3Dtd_content>
+      =
+<P>=D5=E2=CA=C7=B1=EA=D7=BC=B5=C4=CA=FD=D1=A7=CC=E2=A1=A3=C7=F3N!=B5=C4=B7=
+=C7=C1=E3=C4=A9=CE=BB=A1=A3</P>
+      =
+<P>=D5=E2=D2=B2=CA=C7=B1=EA=D7=BC=B5=C4BT=CC=E2=A3=AC=B9=E2=CA=C7N=BE=CD=BF=
+=C9=D2=D4=B5=BD100=CE=BB=A1=A3=CD=EA=C8=AB=C3=BB=D3=D0=D6=B1=BD=D3=D7=F6=B5=
+=C4=B0=EC=B7=A8=A1=A3=BB=B9=CA=C7=BF=B4LeeMars=B5=C4=B1=A8=B8=E6=B0=C9!</=
+P>
+      <P><FONT size=3D2>=CA=D7=CF=C8=BF=BC=C2=C7=C4=B3=D2=BB=B8=F6N!(N =
+&lt;=20
+      =
+10)=A3=AC=CE=D2=C3=C7=CF=C8=BD=AB=CB=F9=D3=D05=B5=C4=B1=B6=CA=FD=CC=E1=B3=
+=F6=C0=B4=A3=AC=D3=C31=B4=FA=CC=E6=D4=AD=C0=B45=B5=C4=B1=B6=CA=FD=B5=C4=CE=
+=BB=D6=C3=A1=A3=D3=C9=D3=DA5=B5=C4=B1=B6=CA=FD=C8=AB=B1=BB=CC=E1=D7=DF=C1=
+=CB=A3=AC=CB=F9=D2=D4=D5=E2=D1=F9=BE=CD=B2=BB=BB=E1=B3=F6=CF=D6=CE=B2=CA=FD=
+0=C1=CB=A1=A3=CE=D2=C3=C7=CF=C8=B0=D10..9=B5=C4=BD=D7=B3=CB=B5=C4=CE=B2=CA=
+=FD=C1=D0=B3=F6=C0=B4=A3=A8=D7=A2=D2=E2=A3=AC5=B5=C4=B1=B6=CA=FD=B5=C4=CE=
+=BB=D6=C3=C9=CF=CA=C71=A3=A9=A3=AC=BF=C9=D2=D4=B5=C3=B5=BDtable[0..9]=20
+      =3D (1, 1, 2, 6, 4, 4, 4, 8, 4, 6)=A1=A3=B6=D4=D3=DAN &lt; =
+5=A3=AC=D6=B1=BD=D3=CA=E4=B3=F6table[N]=BC=B4=BF=C9=A3=BB=B6=D4=D3=DAN =
+&gt; =3D=20
+      =
+5=A3=AC=D3=C9=D3=DA=CC=E1=B3=F6=C1=CB=D2=BB=B8=F65=A3=AC=D2=F2=B4=CB=D0=E8=
+=D2=AA=D2=BB=B8=F62=D3=EB=D6=AE=C5=E4=B3=C910=A3=AC=BC=B4=BD=AB=CE=B2=CA=FD=
+=B3=FD=D2=D42=A1=A3=D7=A2=D2=E2=B5=BD=B3=FD=C1=CB0=20
+      =
+!=BA=CD1!=A3=AC=BD=D7=B3=CB=B5=C4=D7=EE=BA=F3=D2=BB=B8=F6=B7=C7=C1=E3=CA=FD=
+=D7=D6=B1=D8=CE=AA=C5=BC=CA=FD=A3=A8=CF=D4=C8=BB=A3=AC=D2=F2=CE=AA=D4=DAN=
+!=B5=C4=D6=CA=D2=F2=CA=FD=C0=EF2=B5=C4=B8=F6=CA=FD=D2=AA=B6=E0=A3=A9=A3=AC=
+=CB=F9=D2=D4=D3=D0=D2=BB=B8=F6=BA=DC=CC=D8=B1=F0=B5=C4=B3=FD=B7=A8=B9=E6=C2=
+=C9=A3=BA2 / 2 =3D 6=A3=AC4 / 2 =3D=20
+      2=A3=AC6 / 2 =3D 8=A3=AC8 / 2 =3D =
+4=A1=A3=B1=C8=BD=CF=CC=D8=CA=E2=B5=C4=BE=CD=CA=C72 / 2 =3D 12 / 2 =3D =
+6=A3=AC 6 / 2 =3D 16 / 2 =3D=20
+      =
+8=A1=A3=D5=E2=D1=F9=CE=D2=C3=C7=BE=CD=BF=C9=D2=D4=B5=C3=B5=BD=C8=E7=CF=C2=
+=CA=BD=D7=D3=A3=BA <BR></P></FONT>
+      <P>
+      <TABLE cellSpacing=3D1 cellPadding=3D3 width=3D"90%" =
+align=3Dcenter border=3D0>
+        <TBODY>
+        <TR>
+          <TD><B><FONT size=3D2>=B4=FA=C2=EB:</FONT></B></TD></TR>
+        <TR>
+          <TD=20
+            =
+class=3Dcode><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;table[N]=20
+            <BR>F(N) =3D ------------ (0 &lt;=3D N &lt;=20
+            =
+10)&nbsp;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+2^([N/5])=20
+            <BR></TD></TR></TBODY></TABLE></P>
+      <P><FONT =
+size=3D2>=D4=D9=BF=BC=C2=C7=B8=B4=D4=D3=B5=C4=A1=A3=BF=BC=C2=C7=C4=B3=D2=BB=
+=B8=F6N!(N &gt;=3D=20
+      =
+10)=A3=AC=CE=D2=C3=C7=CF=C8=BD=AB=CB=F9=D3=D05=B5=C4=B1=B6=CA=FD=CC=E1=B3=
+=F6=C0=B4=A3=AC=D3=C31=B4=FA=CC=E6=D4=AD=C0=B45=B5=C4=B1=B6=CA=FD=B5=C4=CE=
+=BB=D6=C3=A1=A3=D3=C9=D3=DA5=B5=C4=B1=B6=CA=FD=C8=AB=B1=BB=CC=E1=D7=DF=C1=
+=CB=A3=AC=CB=F9=D2=D4=D5=E2=D1=F9=BE=CD=B2=BB=BB=E1=B3=F6=CF=D6=CE=B2=CA=FD=
+0=C1=CB=A1=A3=CE=D2=C3=C7=B9=DB=B2=EC=D2=BB=CF=C2=CA=A3=CF=C2=B5=C4=CA=FD=
+=B5=C4=B3=CB=BB=FD=B5=C4=CE=B2=CA=FD=A3=AC=CD=A8=B9=FDtable=B1=ED=A3=AC=CE=
+=D2=C3=C7=B7=A2=CF=D6=D5=E210=B8=F6=CA=FD=B5=C4=B3=CB=BB=FD=B5=C4=CE=B2=CA=
+=FD=CA=C76=A3=AC6=20
+      *=20
+      =
+6=B5=C4=CE=B2=CA=FD=BB=B9=CA=C76=A3=AC=D2=F2=B4=CB=CE=D2=C3=C7=BD=AB=CA=A3=
+=CF=C2=B5=C4=CA=FD=C3=BF10=B8=F6=B7=D6=B3=C9=D2=BB=D7=E9=A3=AC=D4=F2=CA=A3=
+=CF=C2=B5=C4=CA=FD=B5=C4=B3=CB=BB=FD=B5=C4=CE=B2=CA=FD=D6=BB=D3=EB=D7=EE=BA=
+=F3=D2=BB=D7=E9=B5=C4=C7=E9=BF=F6=D3=D0=B9=D8=A3=AC=BC=B4=D3=EBN=B5=C4=D7=
+=EE=BA=F3=D2=BB=CE=BB=CA=FD=D7=D6=D3=D0=B9=D8=A1=A3=D3=C9=D3=DA=CE=D2=C3=C7=
+=B0=D15=B5=C4=B1=B6=CA=FD=CC=E1=B3=F6=C0=B4=C1=CB=A3=ACN!=D6=D0=D2=BB=B4=CE=
+=BF=C9=D2=D4=CC=E1=B3=F6[N/5]=B8=F65=B5=C4=B1=B6=CA=FD=A3=AC=D3=D0=B6=E0=C9=
+=D9=B8=F65=A3=AC=BE=CD=D0=E8=D2=AA=D3=D0=B6=E0=C9=D9=B8=F62=D3=EB=D6=AE=C5=
+=E4=B3=C910=A3=AC=CB=F9=D2=D4=D3=D0=B6=E0=C9=D9=B8=F65=A3=AC=D7=EE=BA=F3=BE=
+=CD=D2=AA=B3=FD=D2=D4=B6=E0=C9=D9=B8=F62=A1=A3=D7=A2=D2=E2=B5=BD=B3=FD2=B5=
+=C4=BD=E1=B9=FB=B1=E4=BB=AF=CA=C74=B8=F6=D2=BB=D1=AD=BB=B7=A3=AC=D2=F2=B4=
+=CB=C8=E7=B9=FB=D3=D0A=B8=F65=A3=AC=D6=BB=D0=E8=D2=AA=B3=FD(A=20
+      MOD 4)=B4=CE2=BE=CD=BF=C9=D2=D4=C1=CB=A1=A3A MOD=20
+      =
+4=D6=BB=D3=EBA=B5=C4=D7=EE=BA=F3=C1=BD=CE=BB=CA=FD=D3=D0=B9=D8=A3=AC=BA=DC=
+=BA=C3=C7=F3=CB=E3=A1=A3=CA=A3=CF=C2=B5=C45=B5=C4=B1=B6=CA=FD=A3=AC=D3=C9=
+=D3=DA5=D2=D1=BE=AD=C8=AB=B2=BF=B4=A6=C0=ED=B5=F4=C1=CB=A3=AC=BE=CD=B1=E4=
+=B3=C9[N/5]!=A1=A3=D3=DA=CA=C7=A3=AC=CE=D2=C3=C7=BF=C9=D2=D4=B5=C3=B5=BD=D2=
+=BB=B8=F6=B5=DD=B9=E9=B9=D8=CF=B5=A3=BA=20
+      <BR></P></FONT>
+      <P>
+      <TABLE cellSpacing=3D1 cellPadding=3D3 width=3D"90%" =
+align=3Dcenter border=3D0>
+        <TBODY>
+        <TR>
+          <TD><B><FONT size=3D2>=B4=FA=C2=EB:</FONT></B></TD></TR>
+        <TR>
+          <TD=20
+            =
+class=3Dcode><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;=20
+            F([N/5]) * table[N=B5=C4=CE=B2=CA=FD] * 6 <BR>F(N) =3D=20
+            ---------------------------------------- (N &gt; 10)=20
+            =
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+            2^([N/5] MOD 4) <BR></TD></TR></TBODY></TABLE></P>
+      <P><FONT =
+size=3D2>=D5=E2=D1=F9=CE=D2=C3=C7=BE=CD=B5=C3=B5=BD=C1=CB=D2=BB=B8=F6O(lo=
+g5(N))=B5=C4=CB=E3=B7=A8=A3=AC=D5=FB=B3=FD5=BF=C9=D2=D4=D3=C3=B8=DF=BE=AB=
+=B6=C8=BC=D3=B7=A8=D7=F6=A3=AC=B3=CB2=D4=D9=B3=FD10=BC=B4=20
+      =
+<BR>=BF=C9=A1=A3=D5=FB=B8=F6=CB=E3=B7=A8=CF=E0=B5=B1=C7=C9=C3=EE=A3=AC=D0=
+=B4=C6=F0=C0=B4=D2=B2=B1=C8=BD=CF=C7=E1=CB=C9=A1=A3</FONT></P>
+      <P><FONT =
+size=3D2>=CF=EB=C1=CB=BA=C3=B0=EB=CC=EC=A3=AC=BF=B4=C1=CB=BA=C3=B0=EB=CC=EC=
+=A3=AC=D0=B4=C1=CB=BA=C3=B0=EB=CC=EC.......</FONT></P>
+      <P>#include &lt;cstdio&gt;<BR>#include &lt;string&gt;</P>
+      <P>typedef struct<BR>{<BR>&nbsp;&nbsp;&nbsp; int size, =
+a[110];<BR>}=20
+      LInt;</P>
+      <P>char ch[110];<BR>int t[10] =3D<BR>{<BR>&nbsp;&nbsp;&nbsp; 1, 1, =
+2, 6, 4,=20
+      4, 4, 8, 4, 6<BR>};<BR>int f[10] =3D<BR>{<BR>&nbsp;&nbsp;&nbsp; 1, =
+1, 2, 6,=20
+      4, 2, 2, 4, 2, 8<BR>};</P>
+      <P>void div5 ( const LInt &amp;l, LInt &amp;r =
+)<BR>{<BR>&nbsp;&nbsp;&nbsp;=20
+      int c =3D 0, i, t;<BR>&nbsp;&nbsp;&nbsp; memset ( r.a, 0, sizeof ( =
+r.a )=20
+      );<BR>&nbsp;&nbsp;&nbsp; for ( i =3D 0; i &lt; l.size; i ++=20
+      )<BR>&nbsp;&nbsp;&nbsp; =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      r.a[i] =3D ( c + l.a[i] * 2 ) %=20
+      10;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c =3D ( c + =
+l.a[i] * 2 ) /=20
+      10;<BR>&nbsp;&nbsp;&nbsp; }<BR>&nbsp;&nbsp;&nbsp; if ( c=20
+      )<BR>&nbsp;&nbsp;&nbsp; =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      r.a[i] =3D c;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i=20
+      ++;<BR>&nbsp;&nbsp;&nbsp; }<BR>&nbsp;&nbsp;&nbsp; r.size =3D=20
+      i;<BR>&nbsp;&nbsp;&nbsp; for ( i =3D 0; i &lt; r.size - 1; i ++=20
+      )<BR>&nbsp;&nbsp;&nbsp; =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      r.a[i] =3D r.a[i + 1];<BR>&nbsp;&nbsp;&nbsp; }<BR>&nbsp;r.a[i] =3D =
+
+      0;<BR>&nbsp;&nbsp;&nbsp; r.size --;<BR>}</P>
+      <P>int mod4 ( const LInt &amp;l )<BR>{<BR>&nbsp;&nbsp;&nbsp; int s =
+=3D=20
+      l.a[0] + l.a[1] * 10;<BR>&nbsp;&nbsp;&nbsp; return s % 4;<BR>}</P>
+      <P>int ld ( const LInt &amp;l )<BR>{<BR>&nbsp;&nbsp;&nbsp; if ( =
+l.size =3D=3D=20
+      1 )<BR>&nbsp;&nbsp;&nbsp; =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      return f[l.a[0]];<BR>&nbsp;&nbsp;&nbsp; }<BR>&nbsp;&nbsp;&nbsp;=20
+      else<BR>&nbsp;&nbsp;&nbsp; =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      LInt ll;&nbsp; <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; div5 =
+( l, ll=20
+      );<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int mod =3D mod4 =
+( ll=20
+      );<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int tx =3D ld ( =
+ll=20
+      );<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int dx =3D tx * 6 =
+*=20
+      t[l.a[0]] % 10;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for =
+( int i=20
+      =3D 0; i &lt; mod; i ++ =
+)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+if=20
+      ( dx =3D=3D 2=20
+      =
+)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;=20
+      dx =3D=20
+      =
+6;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+
+      =
+}<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      else if ( dx =3D=3D 6=20
+      =
+)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;=20
+      dx =3D=20
+      =
+8;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+
+      =
+}<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      =
+else<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;=20
+      =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;=20
+      dx /=3D=20
+      =
+2;<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+
+      }<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      }<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return=20
+      dx;<BR>&nbsp;&nbsp;&nbsp; }<BR>}</P>
+      <P>&nbsp;</P>
+      <P>void proc ()<BR>{<BR>&nbsp;&nbsp;&nbsp; LInt =
+n;<BR>&nbsp;&nbsp;&nbsp;=20
+      memset ( n.a, 0, sizeof ( n.a ) );<BR>&nbsp;&nbsp;&nbsp; n.size =
+=3D strlen (=20
+      ch );<BR>&nbsp;&nbsp;&nbsp; for ( int i =3D 0; i &lt; n.size; i ++ =
+
+      )<BR>&nbsp;&nbsp;&nbsp; =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      n.a[i] =3D ch[strlen ( ch ) - i - 1] - '0';<BR>&nbsp;&nbsp;&nbsp;=20
+      }<BR>&nbsp;&nbsp;&nbsp; printf ( "%d\n", ld ( n ) );<BR>}</P>
+      <P>int main ()<BR>{<BR>&nbsp;&nbsp;&nbsp; //freopen ( "in.txt", =
+"r", stdin=20
+      );<BR>&nbsp;&nbsp;&nbsp; //freopen ( "out.txt", "w", stdout=20
+      );<BR>&nbsp;&nbsp;&nbsp; while ( scanf ( "%s", ch ) !=3D EOF=20
+      )<BR>&nbsp;&nbsp;&nbsp; =
+{<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+      proc ();<BR>&nbsp;&nbsp;&nbsp; }<BR>&nbsp;&nbsp;&nbsp; return =
+0;<BR>}</P>
+      <P><BR>&nbsp;</P>
+      <TABLE width=3D"100%" border=3D1>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle>2251891</TD>
+          <TD align=3Dmiddle>2007-03-02 22:31:05</TD>
+          <TD align=3Dmiddle><FONT color=3Dred>Accepted</FONT></TD>
+          <TD align=3Dmiddle><A title=3D"Just the Facts"=20
+            =
+href=3D"http://acm.zju.edu.cn/show_problem.php?pid=3D1222">1222</A></TD>
+          <TD align=3Dmiddle>C++</TD>
+          <TD align=3Dmiddle>00:00.01</TD>
+          <TD align=3Dmiddle>492K</TD>
+          <TD align=3Dmiddle><A style=3D"TEXT-DECORATION: none"=20
+            =
+href=3D"http://acm.zju.edu.cn/user_status.php?user=3Dhappy2006">Crux.D</A=
+></TD></TR></TBODY></TABLE></DIV>
+      <P align=3Dcenter><BR><STRONG><A =
+name=3Dtrackback></A>=D2=FD=D3=C3=B5=D8=D6=B7=A3=BA<A=20
+      =
+href=3D"http://blog.programfan.com/trackback.asp?id=3D23607">http://blog.=
+programfan.com/trackback.asp?id=3D23607</A></STRONG></P>&nbsp;</DIV>
+      <DIV>
+      <TABLE=20
+      style=3D"BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 1px; =
+BORDER-TOP: #ff9900 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; =
+BORDER-LEFT: #ff9900 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #ff9900 =
+1px solid"=20
+      cellSpacing=3D0 cellPadding=3D0 width=3D"95%" align=3Dcenter =
+border=3D0>
+        <TBODY>
+        <TR>
+          <TD align=3Dmiddle bgColor=3D#ff9900><STRONG><A=20
+            =
+name=3Dcomment>=CE=C4=D5=C2=C6=C0=C2=DB</A></STRONG></TD></TR>
+        <TR>
+          <TD><BR>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"95%" =
+align=3Dcenter=20
+border=3D0>
+              <TBODY>
+              <TR>
+                <TD width=3D"91%" bgColor=3D#dff0ff height=3D20>
+                  <LI>=C6=C0=C2=DB=C8=CB=A3=BA<A=20
+                  =
+href=3D"mailto:ybbaigo@126.com">ybbaigo</A>&nbsp;&nbsp;&nbsp;=CA=B1=BC=E4=
+=A3=BA2007-11-22=20
+                  9:35:00</LI></TD>
+                <TD width=3D"9%" bgColor=3D#dff0ff></TD></TR>
+              <TR>
+                <TD colSpan=3D2=20
+        =
+height=3D20>=BE=AB=B2=CA=A3=A1=A3=A1=A3=A1=A3=A1<BR>=B6=A5=A3=A1=A3=A1=A3=
+=A1</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD>
+            <FORM name=3Dform1 onsubmit=3D"return check(this);" =
+method=3Dpost>
+            <P>&nbsp;</P>
+            <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D380 =
+align=3Dcenter=20
+              border=3D0><TBODY>
+              <TR>
+                <TD><SPAN =
+class=3Dredfont><STRONG>=B6=D4=B4=CB=CE=C4=B7=A2=B1=ED=C6=C0=C2=DB=A3=BA<=
+/STRONG></SPAN></TD></TR>
+              <TR>
+                <TD>=C4=FA=B5=C4=EA=C7=B3=C6:&nbsp;<INPUT maxLength=3D20 =
+
+                  =
+name=3Dusername>&nbsp;=EA=C7=B3=C6=B2=BB=CC=EE=CE=AA=A1=B0=C4=E4=C3=FB=A1=
+=B1<BR>=B5=E7=D7=D3=D3=CA=BC=FE:&nbsp;<INPUT=20
+                  maxLength=3D40 name=3Demail><BR>
+                  <DIV id=3Dcode></DIV><BR><INPUT type=3Dhidden =
+value=3D23607=20
+                  name=3Darticleid><INPUT type=3Dhidden value=3De633e2ac =
+
+                  name=3Dartcode><INPUT type=3Dhidden value=3D2801=20
+                  =
+name=3Dblogid>=C6=C0=C2=DB=C4=DA=C8=DD:(=D7=D6=CA=FD=C7=EB=BF=D8=D6=C6=D4=
+=DA500=D7=D6=D2=D4=C4=DA)<BR><TEXTAREA onfocus=3Dtxtfocus() =
+name=3Dcontent rows=3D5 cols=3D50></TEXTAREA></TD></TR>
+              <TR>
+                <TD>
+                  <DIV align=3Dcenter><INPUT type=3Dsubmit =
+value=3D=CC=E1=BD=BB =
+name=3DSubmitComment></DIV></TD></TR></TBODY></TABLE></FORM></TD></TR></T=
+BODY></TABLE></DIV>
+      <DIV><SPAN=20
+      style=3D"COLOR: =
+#999999"><BR>=B0=E6=C8=A8=C9=F9=C3=F7=A3=BA=B1=E0=B3=CC=B0=AE=BA=C3=D5=DF=
+=CD=F8=D5=BE=CE=AA=B4=CBBLOG=B7=FE=CE=F1=CC=E1=B9=A9=C9=CC=A3=AC=C8=E7=B1=
+=BE=CE=C4=C7=A3=C9=E6=B5=BD=B0=E6=C8=A8=CE=CA=CC=E2=A3=AC=B1=E0=B3=CC=B0=AE=
+=BA=C3=D5=DF=CD=F8=D5=BE=B2=BB=B3=D0=B5=A3=CF=E0=B9=D8=D4=F0=C8=CE=A3=AC=C8=
+=E7=D3=D0=B0=E6=C8=A8=CE=CA=CC=E2=C7=EB=D6=B1=BD=D3=D3=EB=B1=BE=CE=C4=D7=F7=
+=D5=DF=C1=AA=CF=B5=BD=E2=BE=F6=A1=A3=D0=BB=D0=BB=A3=A1</DIV></DIV></SPAN>=
+</TD>
+    <TD width=3D200 =
+background=3Dhttp://blog.programfan.com/template/skin6/bk.gif>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"95%" align=3Dright =
+border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3Dtd_style1 height=3D20>BLOG=BD=E9=C9=DC</TD></TR>
+        <TR>
+          <TD class=3Dtd_content style=3D"COLOR: gray"=20
+            =
+height=3D20>=D5=E2=B8=F6=C8=CB=BA=DC=C0=C1=A3=AC=CA=B2=C3=B4=D2=B2=C3=BB=C1=
+=F4=CF=C2=A1=A3<BR><BR>=B0=E1=BC=D2&nbsp;http://blog.csdn.net/Crux_D/</TD=
+></TR>
+        <TR>
+          <TD height=3D20></TD></TR>
+        <TR>
+          <TD class=3Dtd_style1 =
+height=3D20>=CE=C4=D5=C2=B7=D6=C0=E0</TD></TR>
+        <TR>
+          <TD class=3Dtd_content height=3D20>=A1=A4<A class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3706">ACM</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3870">DP</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3871">=CB=D1=CB=F7</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3872">=CA=FD=D1=A7</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3873">=CD=BC=C2=DB</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3874">=D4=D3=CC=E2</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3956">=CA=F7=D0=CE</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+4082">=B2=A9=DE=C8</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+4356">=B0=CB=D8=D4</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+4621">=C4=A3=C4=E2</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+4769">=B2=EE=B7=D6=D4=BC=CA=F8</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+4855">=C5=C5=D0=F2</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+5028">=CC=B0=D0=C4</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+5189">=C6=E4=CB=FB</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+6605">=C2=D2=B5=AF</A><BR>=A1=A4<A=20
+            class=3Da1=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801&amp;columnid=3D=
+3702">=CB=E3=B7=A8</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/blog.asp?blogid=3D2801">=CB=F9=D3=D0=CE=
+=C4=D5=C2</A></TD></TR>
+        <TR>
+          <TD height=3D20></TD></TR>
+        <TR>
+          <TD class=3Dtd_style1 =
+height=3D20>=D7=EE=D0=C2=C6=C0=C2=DB</TD></TR>
+        <TR>
+          <TD class=3Dtd_content height=3D20>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D20746#comment"=20
+            =
+target=3D_blank>=B3=AC=B3=AC=B3=AC=B3=AC=B3=AC=B3=AC=D0=C0=C9=CD=C4=E3=B5=
+=C4=B7=E7=B8=F1</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D32849#comment"=20
+            target=3D_blank>Thx~</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D21845#comment"=20
+            =
+target=3D_blank>=CE=D2=B5=C4=C0=CF=CA=C7WA=A3=AC=B1=BE=C0=B4=CF=EB=D3=C3=D5=
+=E2=B1=EA=B3=CC=B2=E9=B4=ED=B5=C4=A3=AC=BD=E1=B9=FB</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D32353#comment"=20
+            target=3D_blank>=C7=BF</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D23936#comment"=20
+            target=3D_blank>cool!</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D32849#comment"=20
+            target=3D_blank>=CA=DC=BD=CC=C1=CB=A1=A3</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D32849#comment"=20
+            target=3D_blank>thanks&nbsp;a&nbsp;l</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D17099#comment"=20
+            =
+target=3D_blank>=C0=CF=D0=D6=A3=AC=C7=EB=CE=CA=D5=E2=B8=F650=CA=C7=D4=F5=C3=
+=B4=C0=B4=B5=C4=A1=A3=CE=AA=CA=B2=C3=B4N=A1=B7</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D32669#comment"=20
+            target=3D_blank>TLE</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/article.asp?id=3D16851#comment"=20
+            =
+target=3D_blank>=B5=B1=C8=BB=A3=AC=D2=B2=BF=C9=D2=D4=D5=E2=D1=F9=D0=B4=A3=
+=ACplace=A3=A8pos+</A><BR></TD></TR>
+        <TR>
+          <TD height=3D20></TD></TR>
+        <TR>
+          <TD class=3Dtd_style1 =
+height=3D20>=D7=EE=D0=C2=C1=F4=D1=D4</TD></TR>
+        <TR>
+          <TD class=3Dtd_content height=3D20>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#26313">=C3=
+=F7=CF=D4=CA=C7=C4=E3=B5=C4=CA=B5=CF=D6=CA=C7C=B5=C4=B7=E7=B8=F1&nbsp;=B8=
+=C9=C2=EF</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#24362">=CA=
+=C7=B0=A1=A3=AC=BA=C7=BA=C7=A1=A3=A1=AD=A1=AD=C4=E3=D4=F5=C3=B4=BF=B4=B3=F6=
+=C0=B4=B5=C4=A3=BF</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#24303">=C4=
+=E3=CA=C7=C0=CF=B6=C5=A3=BF</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#10794">=BA=
+=DC=C0=F7=BA=A6=D1=BD=D5=E2=C3=B4=C4=D1,=C8=C3=CE=D2=B1=E0=BB=B9=B2=BB=D6=
+=AA=B5=C0=B1=E0</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#7398">=D5=E2=
+=C0=EF=D0=B4=B2=BB=CF=C2=A3=AC=B5=A5=B6=C0=D0=B4=C1=CB=D2=BB=B5=E3</A><BR=
+>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#7311">=D3=D0=
+=B8=F6=CE=CA=CC=E2=C7=EB=BD=CC&nbsp;=A3=AC=C9=EE=CB=D1=BA=CD=B6=AF=CC=AC=B9=
+=E6=BB=AE</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#4981">to&n=
+bsp;eric:=C4=C7=B8=F6=A3=AC</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#4787">=D3=D0=
+=B8=F6=CE=CA=CC=E2=CF=EB=C7=EB=BD=CC=C4=E3=D2=BB=CF=C2=A3=AC=CB=C6=BA=F5=B2=
+=EE=B7=D6=D4=BC=CA=F8=D6=D0=A3=ACd</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#4544">very=
+&nbsp;good&nbsp;</A><BR>=A1=A4<A=20
+            =
+href=3D"http://blog.programfan.com/guestbook.asp?blogid=3D2801#3844">zju=D2=
+=EB=CC=E2=C2=DB=CC=B3=B9=D8=C1=CB&nbsp;TAT</A><BR>&nbsp;&nbsp;&gt;<A=20
+            =
+href=3D"http://www.programfan.com/blog/guestbook.asp?blogid=3D2801"><B>=CC=
+=EE=D0=B4=C1=F4=D1=D4</B></A>&lt;</TD></TR>
+        <TR>
+          <TD height=3D20></TD></TR>
+        <TR>
+          <TD class=3Dtd_style1 height=3D20>=CA=D5=B2=D8=BC=D0</TD></TR>
+        <TR>
+          <TD class=3Dtd_content height=3D20>=A1=A4<A=20
+            href=3D"http://elfd1985.spaces.live.com/"=20
+        target=3D_blank>=CE=D2=B5=C4=BF=D5=BC=E4</A><BR></TD></TR>
+        <TR>
+          <TD height=3D20></TD></TR>
+        <TR>
+          <TD class=3Dtd_style1 =
+height=3D20>BLOG=CD=B3=BC=C6=D0=C5=CF=A2</TD></TR>
+        <TR>
+          <TD class=3Dtd_content =
+height=3D20>&nbsp;=A1=A4=B4=B4=BD=A8=D3=DA=A3=BA2006-7-26<BR>&nbsp;=A1=A4=
+=B9=B2<SPAN=20
+            style=3D"COLOR: =
+#ff0000">85</SPAN>=C6=AA=CE=C4=D5=C2<BR>&nbsp;=A1=A4=B9=B2<SPAN=20
+            style=3D"COLOR: =
+#ff0000">22</SPAN>=CC=F5=C1=F4=D1=D4<BR>&nbsp;=A1=A4=B9=B2<SPAN=20
+            style=3D"COLOR: =
+#ff0000">67</SPAN>=CC=F5=C6=C0=C2=DB<BR>&nbsp;=A1=A4=B7=C3=CE=CA=CD=B3=BC=
+=C6=A3=BA<SPAN=20
+            style=3D"COLOR: #ff0000">180542<BR><A=20
+            =
+href=3D"http://www.programfan.com/blog/rss.asp?author=3Dstcrux"><IMG=20
+            src=3D"http://blog.programfan.com/image/rss2.gif"=20
+          border=3D0></A></SPAN></TD></TR>
+        <TR>
+          <TD =
+height=3D20></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=3D0 cellPadding=3D0 width=3D755 align=3Dcenter =
+border=3D0>
+  <TBODY>
+  <TR>
+    <TD bgColor=3D#ffcccc>
+      <DIV align=3Dcenter><BR>Powered by <A=20
+      href=3D"http://www.programfan.com/">Programfan.Com </A>. All =
+Rights=20
+      Reserved. <BR></DIV></TD></TR></TBODY></TABLE></BODY></HTML>
+
+------=_NextPart_000_000D_01C9234F.0BACC3B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://blog.programfan.com/image/rss2.gif
+
+R0lGODlhQAANAJEAAP9mAP///4mOeQAAACH5BAAAAAAALAAAAABAAA0AAAJzjI+py+0Oopy0xiCy
+3rz7nxnWOGLgiXoiyUpmCqMrELiXTVPvsfGhofFxgMGazUirrZCXYOjZA72gO2bueLVWp8TfcEot
+TpS4rM4JFoB3H1O1bETGZ2z1b9vzVfOtfjoGKNbH8hcIODNoUWgI8+D4CBlZAAA7
+
+------=_NextPart_000_000D_01C9234F.0BACC3B0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://blog.programfan.com/template/skin6/bk.gif
+
+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
+
+------=_NextPart_000_000D_01C9234F.0BACC3B0--

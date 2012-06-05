@@ -1,0 +1,8 @@
+外接圆： a/sinA=b/sinB=c/sinC=2R 
+由此可知：R=a/2sinA 
+cosA=(b^2+c^2-a^2)/2bc; 
+sinA=[(a+b+c)(a+b-c)(b+c-a)(a+c-b))^1/2]/2bc 
+R=abc/[(a+b+c)(a+b-c)(b+c-a)(a+c-b))^1/2]; 
+
+内切圆：r=2S/a+b+c(S为三角形面积，a,b,c为三边长） 
+由海轮公式得：S=[(a+b+c)(a+b-c)(b+c-a)(a+c-b))^1/2] 代入即可

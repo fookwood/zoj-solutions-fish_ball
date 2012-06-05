@@ -1,0 +1,6 @@
+4
+4
+abcd
+da
+acdc
+ca

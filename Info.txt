@@ -1,0 +1,57 @@
+Num     Title                                    Type                   Grade    Algorithm              Finished
+1001    "A + B Problem"                          "简单"                 1        "Simple"               Y
+1002    "Fire Net"                               "搜索"                 2        "DFS"                  Y
+1003    "Crashing Balloon"                       "数论", "搜索"         3        "Stack"                Y
+1004    "Anagrams by Stack"                      "搜索", "栈"           3        "DFS"                  Y
+1005    "Jugs"                                   "搜索"                 2        "BFS"                  Y
+1006    "Do the Untwist"                         "数论"                 3        "Formula"              Y
+1007    "Numerical Summation of a Series"        "数值分析"             4        "Calculus"             Y
+1008    "Gnome Tetravex"                         "搜索"                 4        "DFS"                  Y
+1009    "Enigma"                                 "模拟"                 2        "Simulation"           Y
+1010    "Area"                                   "计算几何"             3        "Geometric", "OOP"     Y
+1011    "NTA"                                    "搜索"                 3        "DFS"                  Y
+1012    "Mainframe"                              "模拟"                 3        "Simulation"           Y
+1014    "Operand"                                "表达式", "树"         3        "String"               Y
+1016    "Parencodings"                           "组合数学"             2        "Formula"              Y
+1024    "Calendar Game"                          "博弈问题"             3        "DP"                   Y
+1025    "Wooden Sticks"                          "贪心", "最优化"       2        "Greedy"               Y
+1026    "Modular multiplication of polynomials"  "模拟"                 3        "Simulation"           Y
+1027    "Human Gene Functions"                   "动态规划"             3        "DP"                   Y
+1028    "Flip and Shift"                         "串处理"               3        "Formula"              Y
+1029    "Moving Tables"                          "最优化"               3        "Formula"              Y
+1037    "Gridland"                               "简单"                 1        "Formula"              Y
+1038    "T9"                                     "模拟", "树", "搜索"   4        "Tree", "DFS"          Y
+1041    "Transmitters"                           "计算几何"             2        "Geometric"            Y
+1042    "W's Cipher"                             "模拟"                 3        "Simulation"           Y
+1043    "Split Windows"                          "模拟", "蘑菇"         4        "Simulation", "OOP"    Y
+1045    "HangOver"                               "简单"                 1        "Simple"               Y
+1047    "Image Perimeters"                       "搜索"                 2        "BFS", "DFS"           Y
+1048    "Financial Management"                   "简单"                 1        "Simple"               Y
+1049    "I Think I Need a Houseboat"             "简单"                 1        "Simple"               Y
+1050    "Start Up the Startup"                   "模拟", "串处理"       2        "Simulation", "String" Y
+1051    "A New Growth Industry"                  "模拟"                 1        "Simulation"           Y
+1056    "The Worm Turns"                         "模拟"                 2        "Simulation"           Y
+1057    "Undercut"                               "简单"                 1        "Simple"               Y
+1058    "Currency Exchange"                      "图", "模拟"           2        "Simulation", "Graph"  Y
+1060    "Sorting It All Out"                     "图"                   3        "Graph", "DFS"         Y
+1061    "Web Navigation"                         "模拟", "栈"           1        "Stack", "Simulation"  Y
+1062    "Trees Made to Order"                    "组合数学"             4        "Combination"          Y
+1067    "Color Me Less"                          "简单"                 1        "Simple"               Y
+1068    "P,MTHBGWB"                              "模拟"                 2        "Simulation"           Y
+1070    "Bode Plot"                              "简单"                 1        "Simple", "Formula"    Y
+1073    "Round and Round We Go"                  "模拟"                 1        "Simulation"           Y
+1074    "To the Max"                             "组合数学", "动态规划" 3        "DP", "Combination"    Y
+1076    "Gene Assembly"                          "动态规划"             3        "DP", "LIS"            Y
+1077    "Genetic Combinations"                   "模拟"                 4        "Simulation"           Y
+1078    "Palindrom Numbers"                      "模拟", "基数运算"     2        "Simulation", "Base"   Y
+1081    "Points Within"                          "计算几何"             3        "Geometric"            Y
+1082    "Stockbroker Grapevine"                  "图", "最短路"         2        "Graph", "Floyd"       Y
+1083    "Frame Stacking"                         "图", "拓扑排序"       4        "Graph", "Topolgy"     Y
+1084    "Channel Allocation"                     "图", "搜索"           3        "Graph", "DFS"         Y
+1086    "Octal Fractions"                        "高精度", "基数运算"   3        "Precision"            Y
+1088    "System Overload"                        "数论", "模拟"         2        "Simulation"           Y
+1089    "Lotto"                                  "蛮力", "枚举"         1        "Enumerate"            Y
+1090    "The Circumference of the Circle"        "计算几何"             3        "Geometric"            Y
+1091    "Knight Moves"                           "搜索"                 2        "BFS"                  Y
+1092    "Arbitrage"                              "图", "最短路"         2        "Graph", "Floyd"       Y
+

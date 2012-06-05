@@ -1,0 +1,4 @@
+简单
+用一个bool[50][50]标记格子的状态
+建立一个结构struct Point{int x, int y};
+然后用deque<Point>来进行操作

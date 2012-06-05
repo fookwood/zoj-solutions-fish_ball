@@ -1,0 +1,56 @@
+6 5
+A<D
+B<C
+A<B
+D<E
+C<D
+Sorted sequence cannot be determined.
+
+6 6
+A<D
+B<C
+E<F
+B<A
+D<E
+A<B
+Inconsistency found after 6 relations.
+
+6 6
+D<E
+B<F
+A<D
+F<C
+A<F
+E<B
+Sorted sequence determined after 6 relations: ADEBFC.
+
+3 3
+A<B
+B<C
+C<A
+Sorted sequence determined after 2 relations: ABC.
+
+4 6
+A<B
+A<C
+B<C
+C<D
+B<D
+A<B
+Sorted sequence determined after 4 relations: ABCD.
+
+3 2
+A<B
+B<A
+Inconsistency found after 2 relations.
+
+2 2
+A<B
+B<A
+Sorted sequence determined after 1 relations: AB.
+
+26 1
+A<Z
+Sorted sequence cannot be determined.
+
+0 0

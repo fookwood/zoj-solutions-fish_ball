@@ -1,0 +1,13 @@
+2
+dir
+Seatea
+10
+*a
+*e
+*tea
+*Sea
+S*
+*
+Seatea
+Seat*tea
+zzz

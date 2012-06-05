@@ -1,0 +1,2 @@
+program z1608;
+{$APPTYPE CONSOLE}var        a,b,r1,r2       :extended;procedure work;var        l,x,y   :extended;begin        readln(a,b,r1,r2);        if (2*r1+0.001>a)or(2*r1+0.001>b)or(2*r2+0.001>a)or(2*r2+0.001>b) then        begin                writeln('No');                exit;        end;        l:=sqrt(sqr(a-r1-r2)+sqr(b-r1-r2));        if l<r1+r2+0.01 then                writeln('No')        else                writeln('Yes');end;begin        while not eof do                work;end.

@@ -1,0 +1,48 @@
+6 5
+A<D
+B<C
+A<B
+D<E
+C<D
+
+6 6
+A<D
+B<C
+E<F
+B<A
+D<E
+A<B
+
+6 6
+D<E
+B<F
+A<D
+F<C
+A<F
+E<B
+
+3 3
+A<B
+B<C
+C<A
+
+4 6
+A<B
+A<C
+B<C
+C<D
+B<D
+A<B
+
+3 2
+A<B
+B<A
+
+2 2
+A<B
+B<A
+
+26 1
+A<Z
+
+0 0
